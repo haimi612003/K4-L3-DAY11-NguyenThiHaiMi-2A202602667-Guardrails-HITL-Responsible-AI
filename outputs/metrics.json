@@ -1,0 +1,28 @@
+{
+  "total_requests": 35,
+  "blocked_requests": 18,
+  "block_rate": 0.5142857142857142,
+  "rate_limit_hits": 5,
+  "judge_checks": 0,
+  "judge_fails": 0,
+  "judge_fail_rate": 0.0,
+  "alerts": [
+    {
+      "metric": "block_rate",
+      "value": 0.514,
+      "threshold": 0.5,
+      "message": "Block rate above threshold — possible attack campaign or guardrail false positives."
+    },
+    {
+      "metric": "rate_limit_hits",
+      "value": 5,
+      "threshold": 5,
+      "message": "Many rate-limit hits — a client may be flooding the bot."
+    }
+  ],
+  "thresholds": {
+    "block_rate": 0.5,
+    "rate_limit_hits": 5,
+    "judge_fail_rate": 0.3
+  }
+}
